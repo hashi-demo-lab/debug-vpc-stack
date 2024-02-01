@@ -6,6 +6,10 @@ variable "aws_identity_token_file" {
   type = string
 }
 
+variable "role_arn" {
+  type = string
+}
+
 variable "workload_idp_name" {
   type = string
   default = "tfstacks-workload-identity-provider"
@@ -18,3 +22,5 @@ variable "vpc_name" {
 variable "vpc_cidr" {
   type = string
 }
+
+
